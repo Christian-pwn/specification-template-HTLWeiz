@@ -1,5 +1,6 @@
 # Specification Template HTL Weiz
 
+<img src="https://user-images.githubusercontent.com/74405354/167274200-94c662a9-75ef-4d15-81c3-0e232925c296.png" width="400mm" />
 A LaTeX template to write the specification (Pflichtenheft) for the technical thesis (Diplomarbeit) at HTL Weiz.
 
 ## Editing
