@@ -10,12 +10,12 @@ A LaTeX template to write the specification (Pflichtenheft) for the technical th
 
 ## VS Code version
 
-If you are looking for the Visual Studio Code version of this template, [here you go.](https://github.com/christian-pwn/vscode-spec/)
+If you are looking for the Visual Studio Code version of this template, ~~[here you go.](https://github.com/christian-pwn/vscode-spec/)~~  
+NOTE: this link is currently broken, should be fixed soon.
 
 ## Legal Info
 
-This template is based on the word template of the same type from teacher **DI Thomas Tanzer**.   Any adopted styles/graphics included in this document belong to him.  
-I do not take responsibility regarding any legal issues that may arise by editing this template.
+This template is based on the word template of the same type from HTL Weiz teacher **DI Thomas Tanzer**.   Any adopted content/styles/graphics included in this document belong to him.  
 
 ### License
 
