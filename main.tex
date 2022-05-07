@@ -3,31 +3,24 @@
 \documentclass[12pt]{article}
 \usepackage{specStyle}
 
-\pagestyle{fancy}
-\cfoot{\thepage\ | \pageref{LastPage}}
-\renewcommand{\headrulewidth}{0mm}
-
-
 \begin{document}
 
-\input{titlepage.tex}
+\input{titlePage.tex}
 
 \section*{Projektteam}
-\begin{center}
-    \begin{tabular}{| l | l | l | l |}
-        \hline
-        \textbf{Name} & \textbf{Individuelle Themenstellung} & \textbf{Telefon} & \textbf{E-Mail} \\
-        \hline
-        Nachname Vorname &  & +43 xxxxxxxxxx & E-Mail \\
-        \hline
-        Nachname Vorname &  & +43 xxxxxxxxxx & E-Mail \\
-        \hline
-    \end{tabular}
-\end{center}
+\begin{tabularx}{\textwidth}{| p{0.15\textwidth} | p{0.15\textwidth} | p{0.15\textwidth} | X |}
+    \hline
+    \textbf{Name} & \textbf{Individuelle Themenstellung} & \textbf{Telefon} & \textbf{E-Mail} \\
+    \hline
+    Nachname Vorname &  & +43 xxxxxxxxxx & Christian.Schorna@hotmail.com \\
+    \hline
+    Nachname Vorname &  & +43 xxxxxxxxxx & E-Mail \\
+    \hline
+\end{tabularx}
 
 \section*{Betreuer/innen}
 \begin{center}
-    \begin{tabular}{| l | l | l | l |}
+    \begin{tabularx}{\textwidth}{| p{0.15\textwidth} | p{0.15\textwidth} | p{0.15\textwidth} | X |}
         \hline
         \textbf{Rolle} & \textbf{Name} & \textbf{Telefon} & \textbf{E-Mail} \\
         \hline
@@ -35,23 +28,23 @@
         \hline
          & Nachname Vorname (KZ2) & +43 xxxxxxxxxx & E-Mail Adresse \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{center}
 
 \section*{Projektpartner}
 \begin{center}
-    \begin{tabular}{| l | l | l | l |}
+    \begin{tabularx}{\textwidth}{| p{0.15\textwidth} | p{0.15\textwidth} | p{0.15\textwidth} | X |}
         \hline
         \textbf{Firmenname} & \textbf{Name} & \textbf{Telefon} & \textbf{E-Mail} \\
         \hline
          & Nachname Vorname & +43 xxxxxxxxxx & E-Mail Adresse \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{center}
 
 \section*{Versionskontrolle}
 \begin{center}
-    \begin{tabular}{| l | l | l | l |}
+    \begin{tabularx}{\textwidth}{| p{0.1\textwidth} | p{0.125\textwidth} | p{0.15\textwidth} | X |}
         \hline
         \textbf{Version} & \textbf{Datum} & \textbf{Autor(en)} & \textbf{Änderungsgrund / Bemerkungen} \\
         \hline
@@ -63,11 +56,11 @@
         \hline
         1.1 & 01.01.2022 & KZ1, KZ2 & Endversion als Diskussionsgrundlage \\
         \hline
-    \end{tabular}
+    \end{tabularx}
 \end{center}
 \clearpage
 
-\fancyhead{}
+\fancyhead{} % clear header
 \tableofcontents
 \clearpage
 
@@ -106,11 +99,130 @@ Hier wird die Grundidee des Projekts beschrieben;
 in welchem Umfeld Sie eingesetzt wird, wozu sie gut ist, etc.
 
 \section{Zielkriterien}
+\subsection{Hardwarespezifikation}
+Hier wird beschrieben, wie die Hardware aufgebaut sein soll, beziehungsweise was das Gerät hardwaretechnisch können soll!
+\begin{itemize}
+    \item Ist ein PC oder ein Mikrocontroller in Verwendung?
+    \item Ist es ein transportables Gerät oder fix verbaut?
+    \item Gibt es besondere Schutzmaßnahmen oder Gehäuseanforderungen?
+\end{itemize}
 
+\subsubsection{Human Machine Interface (HMI)}
+Eine Beschreibung was der Nutzer manuell am Gerät machen kann.
+\begin{itemize}
+    \item Welche Bedienelemente gibt es?
+    \item Wie wird das Gerät betrieben?
+\end{itemize}
 
+\subsection{Softwarespezifikation}
+Hier wird beschrieben, wie die Software aufgebaut sein soll, beziehungsweise was das Gerät softwaretechnisch können soll!
+\begin{itemize}
+    \item Programmiersprache
+    \item Grober Softwareaufbau
+    \item Sonstige Features
+\end{itemize}
 
+\subsubsection{Human Machine Interface (HMI)}
+Eine Beschreibung der Möglichkeiten zur Beeinflussung des Betriebs des Gerätes.
+\begin{itemize}
+    \item Beschreibung Menüführung mit den Ebenen
+    \item Unterschiedliche Betriebsmodi (Normal-, Automatik-, Einzelschritt-, Expertenbetrieb)
+\end{itemize}
 
+\subsection{Test und Industrialisierung}
+Beschreibung, wie die Funktion des Gerätes oder der Anlage über den geforderten Arbeitsbereich sichergestellt werden kann. \\
+Dazu ist ein Konzept notwendig, das den Test und die Vermessung der notwendigen Parameter definiert.
+Wenn notwendig auch über eine zu definierende Anzahl an Geräten hinweg, um statistische Auswertungen machen zu können.
 
+\subsection{Maschinensicherheit}
+Hier soll ein Bezug zur Maschinensicherheitsrichtlinie beziehungsweise zu einer eventuell notwendigen CE-Zertifizierung hergestellt werden.
 
+\section{Erweiterte Ziel- oder Wunschkriterien}
+Beschreibung was über die Normalanforderung an das Projekt noch realisiert werden könnte.
+
+\section{Geräteaufbau}
+\subsection{Blockschaltbild der Hardware}
+Hier wird beschrieben, wie die Hardware in Blöcken aufgebaut sein soll, beziehungsweise was in welchen Baugruppen bearbeitet oder ausgewertet wird! \\
+Auch das Thema EMV kann hier behandelt werden.
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=100mm]{fig/earthOrbit}
+    \caption{Blockschaltbild der Hardware}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=100mm]{fig/earthOrbit}
+    \caption{Detailschaltbild der Hardware}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=100mm]{fig/earthOrbit}
+    \caption{Beschreibung des Human Machine Interfaces}
+\end{figure}
+\clearpage
+
+\subsection{Struktogramm der Software}
+Hier wird beschrieben, wie die Software arbeiten soll!
+Am besten ist die graphische Darstellung mittels Struktogramm oder Flussdiagramm.
+Auch die Darstellung eines Zustandsdiagramms kann sinnvoll sein.
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=100mm]{fig/earthOrbit}
+    \caption{Struktogramm der Software}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=100mm]{fig/earthOrbit}
+    \caption{Zustandsdiagramm}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=100mm]{fig/earthOrbit}
+    \caption{Beschreibung des Human Machine Interfaces}
+\end{figure}
+\clearpage
+
+\section{Aufwände}
+\subsection{Zeitliche Meilensteine in der Projektabwicklung}
+Abschätzung der zeitlichen Durchführung anhand eines einfachen tabellarischen Projektablaufplanes.
+Dabei soll für jeden Projektmitarbeiter eine Tabelle erstellt werden. \\
+Die Planung muss zu Beginn nicht besonders detailreich sein, sie kann später noch verfeinert werden.
+Außerdem kann hier zusätzlich eine Grafik von z.B. MS-Project eingefügt werden.
+
+\subsubsection{Projektmitarbeiter 1}
+\begin{tabularx}{\textwidth}{| l | X |}
+    \hline
+    \textbf{Datum} & \textbf{Meilenstein} \\
+    \hline
+     & \\
+    \hline
+\end{tabularx}
+
+\subsubsection{Projektmitarbeiter 2}
+\begin{tabularx}{\textwidth}{| l | X |}
+    \hline
+    \textbf{Datum} & \textbf{Meilenstein} \\
+    \hline
+     & \\
+    \hline
+\end{tabularx}
+
+\subsection{Finanzielle Aufwendungen}
+Auflistung der HW und SW Komponenten mit erster Abschätzung der Kosten. \\
+\begin{tabularx}{\textwidth}{| p{0.06\textwidth} | p{0.4\textwidth} | p{0.3\textwidth} | X |}
+    \hline
+    \textbf{Pos.} & \textbf{Beschreibung} & \textbf{Bezugsquelle} & \textbf{Kosten}\\
+    \hline
+    1 & & & \\
+    \hline
+    2 & & & \\
+    \hline
+\end{tabularx}
+
+\subsection{Sonstige Aufwendungen}
+Sollte ein Projekt mit externen Partnern durchgeführt werden, so sind eventuell Reisekosten und zusätzlicher Kommunikationsaufwand hier zu beschreiben.
+
+\clearpage
+\listoffigures
 
 \end{document}

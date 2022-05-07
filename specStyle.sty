@@ -10,5 +10,18 @@
 \usepackage{lastpage} % for page numbering
 \usepackage{fancyhdr} % header/footer
 \usepackage{hyperref} % toc hyperlinks
+\usepackage{caption} % custom captions
+\usepackage{tabularx} % tables with adjustable width
 
 \setlength{\headheight}{14.5pt} % compensate fancyhdr
+
+\pagestyle{fancy} % to get custom header / footer
+\cfoot{\thepage\ | \pageref{LastPage}} % set footer to number pages
+\renewcommand{\headrulewidth}{0mm} % comment out if you want a header line
+
+% custom caption format
+\DeclareCaptionFormat{custom}
+{
+    \textbf{\small{#1#2}}\textit{\small #3}
+}
+\captionsetup{format=custom}
