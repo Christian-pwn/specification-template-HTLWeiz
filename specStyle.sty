@@ -5,13 +5,15 @@
 
 \usepackage[german]{babel} % german language
 \usepackage{graphicx} % graphics including
-\usepackage{multirow} % tables multirow
 \usepackage{array} % extend table customisibility
+\usepackage{tabularx} % tables with adjustable width
+\usepackage{booktabs} % neat tables
+\usepackage{siunitx} % decimal point centering
 \usepackage{lastpage} % for page numbering
 \usepackage{fancyhdr} % header/footer
 \usepackage{hyperref} % toc hyperlinks
 \usepackage{caption} % custom captions
-\usepackage{tabularx} % tables with adjustable width
+\usepackage{titlesec} % customize section spacing
 
 \setlength{\headheight}{14.5pt} % compensate fancyhdr
 
@@ -25,3 +27,5 @@
     \textbf{\small{#1#2}}\textit{\small #3}
 }
 \captionsetup{format=custom}
+
+\titlespacing*{\section}{0mm}{2\baselineskip}{0.5ex} % custom titlespacing for tables

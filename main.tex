@@ -1,59 +1,62 @@
 % Template for specification of a thesis (HTL Weiz edition)
 % by Christian Schorna, 2022
-\documentclass[12pt, draft]{article}
+\documentclass[12pt]{article}
 \usepackage{specStyle}
 
 \begin{document}
-
 \input{titlePage.tex}
 
 \section*{Projektteam}
-\begin{tabularx}{\textwidth}{| >{\hspace{0pt}}p{0.15\textwidth} | >{\hspace{0pt}}p{0.21\textwidth} | >{\hspace{0pt}}p{0.15\textwidth} | X |}
-    \hline
-    \textbf{Name} & \textbf{Individuelle Themenstellung} & \textbf{Telefon} & \textbf{E-Mail} \\
-    \hline
-
-    Nachname Vorname &  & +43 xxxxxxxxxx & christian.Schorna@hotmail.com \\
-    \hline
-    Nachname Vorname &  & +43 xxxxxxxxxx & E-Mail \\
-    \hline
+\begin{tabularx}{\textwidth}{ p{0.5\textwidth}<{\hspace{0.1\textwidth}} X }
+    \toprule
+    \textbf{Anschrift} & \textbf{Individuelle Themenstellung} \\
+    \midrule
+    Maximilian Mustermann & \\
+    maximilian.mustermann@gmail.com & Planung und Implementierung \\
+    +43 xxxxxxxxxx & \\
+    \midrule
+    Erika Mustermann & \\
+    erika.mustermann@gmail.com & Dokumentation und Management \\
+    +43 xxxxxxxxxx & \\
+    \bottomrule
 \end{tabularx}
 
 \section*{Betreuer/innen}
-\begin{tabularx}{\textwidth}{| >{\hspace{0pt}}p{0.15\textwidth} | >{\hspace{0pt}}p{0.15\textwidth} | >{\hspace{0pt}}p{0.15\textwidth} | X |}
-    \hline
-    \textbf{Rolle} & \textbf{Name} & \textbf{Telefon} & \textbf{E-Mail} \\
-    \hline
-    Hauptverantwortlich & Nachname Vorname (KZ1) & +43 xxxxxxxxxx & christian.schorna@hotmail.com \\
-    \hline
-        & Nachname Vorname (KZ2) & +43 xxxxxxxxxx & E-Mail Adresse \\
-    \hline
+\begin{tabularx}{\textwidth}{ p{0.5\textwidth}<{\hspace{0.1\textwidth}} X }
+    \toprule
+    \textbf{Anschrift} & \textbf{Rolle} \\
+    \midrule
+    Maximilian Mustermann & \\
+    maximilian.mustermann@gmail.com & Hauptverantwortlich \\
+    +43 xxxxxxxxxx & \\
+    \midrule
+    Erika Mustermann & \\
+    erika.mustermann@gmail.com & Assistenz \\
+    +43 xxxxxxxxxx & \\
+    \bottomrule
 \end{tabularx}
 
 \section*{Projektpartner}
-\begin{center}
-    \begin{tabularx}{\textwidth}{| >{\hspace{0pt}}p{0.2\textwidth} | >{\hspace{0pt}}p{0.15\textwidth} | >{\hspace{0pt}}p{0.15\textwidth} | X |}
-        \hline
-        \textbf{Firmenname} & \textbf{Name} & \textbf{Telefon} & \textbf{E-Mail} \\
-        \hline
-         & Nachname Vorname & +43 xxxxxxxxxx & E-Mail Adresse \\
-        \hline
-    \end{tabularx}
-\end{center}
+\begin{tabularx}{\textwidth}{ p{0.5\textwidth}<{\hspace{0.1\textwidth}} X }
+    \toprule
+    \textbf{Anschrift} & \textbf{Firmenname} \\
+    \midrule
+    Maximilian Mustermann & \\
+    maximilian.mustermann@gmail.com & Musterfirma \\
+    +43 xxxxxxxxxx & \\
+    \bottomrule
+\end{tabularx}
 
 \section*{Versionskontrolle}
-\begin{tabularx}{\textwidth}{| p{0.1\textwidth} | p{0.125\textwidth} | p{0.15\textwidth} | X |}
-    \hline
+\begin{tabularx}{\textwidth}{ >{\centering}p{0.1\textwidth} >{\centering}p{0.15\textwidth} p{0.2\textwidth}<{\hspace{0.1\textwidth}} X }
+    \toprule
     \textbf{Version} & \textbf{Datum} & \textbf{Autor(en)} & \textbf{Änderungsgrund / Bemerkungen} \\
-    \hline
+    \midrule
     0.1 & 01.01.2022 & KZ1, KZ2 & Ersterstellung als Diskussionsgrundlage \\
-    \hline
     0.2 & 01.01.2022 & KZ1 & Erste Revision \\
-    \hline
     1.0 & 01.01.2022 & KZ2 & Endversion \\
-    \hline
     1.1 & 01.01.2022 & KZ1, KZ2 & Endversion als Diskussionsgrundlage \\
-    \hline
+    \bottomrule
 \end{tabularx}
 \clearpage
 
@@ -187,33 +190,32 @@ Die Planung muss zu Beginn nicht besonders detailreich sein, sie kann später no
 Außerdem kann hier zusätzlich eine Grafik von z.B. MS-Project eingefügt werden.
 
 \subsubsection{Projektmitarbeiter 1}
-\begin{tabularx}{\textwidth}{| l | X |}
-    \hline
+\begin{tabularx}{\textwidth}{ p{0.15\textwidth} X }
+    \toprule
     \textbf{Datum} & \textbf{Meilenstein} \\
-    \hline
-     & \\
-    \hline
+    \midrule
+    01.01.2022 & Erstellen des Pflichtenheftes \\
+    \bottomrule
 \end{tabularx}
 
 \subsubsection{Projektmitarbeiter 2}
-\begin{tabularx}{\textwidth}{| l | X |}
-    \hline
+\begin{tabularx}{\textwidth}{ p{0.15\textwidth} X }
+    \toprule
     \textbf{Datum} & \textbf{Meilenstein} \\
-    \hline
-     & \\
-    \hline
+    \midrule
+    01.01.2022 & Erstellen des Pflichtenheftes \\
+    \bottomrule
 \end{tabularx}
 
 \subsection{Finanzielle Aufwendungen}
 Auflistung der HW und SW Komponenten mit erster Abschätzung der Kosten. \\
-\begin{tabularx}{\textwidth}{| p{0.06\textwidth} | p{0.4\textwidth} | p{0.3\textwidth} | X |}
-    \hline
-    \textbf{Pos.} & \textbf{Beschreibung} & \textbf{Bezugsquelle} & \textbf{Kosten}\\
-    \hline
-    1 & & & \\
-    \hline
-    2 & & & \\
-    \hline
+\begin{tabularx}{\textwidth}{ c >{\raggedright}p{0.35\textwidth} >{\raggedright}p{0.35\textwidth} S }
+    \toprule
+    \textbf{Pos.} & \textbf{Beschreibung} & \textbf{Bezugsquelle} & \textbf{Kosten (€)}\\
+    \midrule
+    1 & Induktiver Sensor & RS Components Onlineshop & 100 \\
+    2 & Kapazitiver Sensor & RS Components Onlineshop & 1000.01 \\
+    \bottomrule
 \end{tabularx}
 
 \subsection{Sonstige Aufwendungen}
